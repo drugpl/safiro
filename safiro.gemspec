@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Piotr Nie\u{142}acny"]
   s.date = "2012-02-02"
-  s.description = "TODO: longer description of your gem"
+  s.description = "Aspects for ruby"
   s.email = "piotr.nielacny@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/safiro.rb",
+    "safiro.gemspec",
     "spec/safiro_spec.rb",
     "spec/spec_helper.rb"
   ]
@@ -33,7 +34,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.15"
-  s.summary = "TODO: one-line summary of your gem"
+  s.summary = "Aspects for ruby"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
