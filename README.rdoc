@@ -1,4 +1,5 @@
-= safiro
+= safiro ![safiro](http://img692.imageshack.us/img692/1622/szafir.png)
+
 
 Description goes here.
 
