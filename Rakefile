@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "safiro"
   gem.homepage = "http://github.com/LTe/safiro"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Aspects for ruby}
+  gem.description = %Q{Aspects for ruby}
   gem.email = "piotr.nielacny@gmail.com"
   gem.authors = ["Piotr Niełacny"]
   # dependencies defined in Gemfile
