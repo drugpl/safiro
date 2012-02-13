@@ -9,4 +9,8 @@ class Example
 
   def example(try = nil)
   end
+
+  def example!(try = nil)
+    try = true
+  end
 end

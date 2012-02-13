@@ -24,5 +24,11 @@ describe Safiro::Hooks do
       subject.example("string")
     end
   end
+
+  it "should change local variables" do
+    Example.should_receive(:before_method).with(:example!, {:try => nil})
+    Example.should_receive(:after_method).with(:example!, {:try => true})
+    subject.example!
+  end
 end
 

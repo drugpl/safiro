@@ -1,8 +1,46 @@
 safiro ![safiro](http://img692.imageshack.us/img692/1622/szafir.png)
 ======
 
-
 Description goes here.
+
+Hooks
+=====
+
+You can use simple hooks with safiro. Just include **Safiro::Hooks** and implement *before_method* and *after_method* functions.
+
+```ruby
+class ExampleClass
+  include Safiro::Hooks
+  
+  def self.before_method(method_name, locals)
+    # logic
+    puts method_name, locals
+  end
+
+  def self.after_method(method_name, locals)
+    # logic
+    puts method_name, locals
+  end
+
+  def method(args)
+    puts args
+    args = "bye"
+    puts args
+  end
+end
+```
+
+You can create instance of ExampleClass and execute.
+
+```ruby
+instance = ExampleClass.new
+instance.method("hello")
+
+# => :method, {:args => "hello"}
+# => "hello"
+# => "bye"
+# => :method, {:args => "bye"}
+```
 
 Contributing to safiro
 ======================
