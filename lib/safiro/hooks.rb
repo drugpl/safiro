@@ -8,11 +8,11 @@ module Safiro
     end
 
     module ClassMethods
-      def before_method(method, *args)
+      def before_method(method, args)
         raise NoImplementError
       end
 
-      def after_method(method, *args)
+      def after_method(method, args)
         raise ::NoImplementError
       end
     end
